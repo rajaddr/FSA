@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dharmaraj D(rajaddr@gmail.com)">
+    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
+
+
+    <title>Forecasting Federal Students Aid (FSA) :: Home</title>
+
+    <link rel="shortcut icon" href="/UI/Img/2.png" type="image/x-icon">
+    <link rel="icon" href="/UI/Img/2.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="/UI/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/UI/css/Chart.min.css">
+
+    <script src="/UI/Js/jquery.slim.min.js"></script>
+    <script src="/UI/Js/bootstrap.min.js"></script>
+    <script src="/UI/Js/angular.min.js"></script>
+
+
+    <script src="/UI/Js/Chart.min.js"></script>
+    <script src="/UI/Js/Chart.bundle.min.js"></script>
+    <script src="/UI/Js/utils.js"></script>
+    <script src="/UI/Js/jput.js"></script>
+    <script src="/UI/Js/myScript.js"></script>
+</head>
+
+<style>
+body {margin:0;background-color: #ffffff}
+.h_fixed {position: fixed;width: 100%;background-color: #ffffff;border-bottom: 1px solid #e2e3e5}
+.b_fixed {position: fixed;width: 100%; bottom: 0; background-color: #ffffff; font-size: 10px; height: 18px;padding-top: 0px; text-align: center;border-bottom: 1px solid #e2e3e5}
+.m_div {width: 100%; height: 100%; background-color: #ffffff;padding-top: 60px;padding-bottom: 15px}
+</style>
+
+  <script type="text/javascript">
+        function showEDA(){
+            document.getElementById('Main_Div').innerHTML = ""
+            document.getElementById('Main_Div').innerHTML = document.getElementById('Tbl_Data').innerHTML;
+            alert(document.getElementById('Main_Div').innerHTML)
+        }
+    </script>
+
+<style>
+	canvas{
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+	</style>
+
+
+</head>
+
+<body>
+
+<nav class="h_fixed navbar navbar-expand-lg navbar-light ">
+  <a class="navbar-brand" href="/"><img src="/UI/Img/2.png" width="30" height="27">  FSA</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="models">Models</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="eda">EDA</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<footer class="card-footer b_fixed">
+    Copyright © 2020. ® All rights reserved. Data Source : Federal Student Aid (FSA), an office of the U.S. Department of Education. Hosting : Amazon Web Services (AWS).
+</footer>
+
+
+<div class="m_div" id="Main_Div" style="padding-left: 10px;padding-right: 10px">
+
+ 
+<h5>Introduction</h5>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;Federal Student Aid (FSA), an office of the United States Department of Education, is the largest provider of student financial aid in the US. Federal Student Aid provides student financial assistance in the form of grants, loans, and work-study funds. Federal Student Aid is also responsible for the development, distribution, and processing of the Free Application for Federal Student Aid (FAFSA), the fundamental qualifying form used for all federal student aid distribution programs, as well as for many state, regional, and private student aid programs.</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;Each year Federal Student Aid's staff processes approximately 22 million FAFSAs. Additionally, Federal Student Aid is responsible for enforcing the financial aid rules and regulations required by the Higher Education Act of 1965 and the U.S. Department of Education and managing the outstanding federal student loan portfolio.<br />&nbsp; &nbsp; &nbsp; &nbsp;Federal Student Aid's core mission is to ensure that all eligible Americans benefit from federal financial assistance&mdash;grants, loans and work-study programs&mdash;for education beyond high school.</p>
+<h5>Need for this Study:</h5>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;When it comes to college, nearly the first topic of every conversation is finance. The cost of college has increased dramatically over the years, and it&rsquo;s all anyone ever seems to talk about. But there&rsquo;s an important conversation that is apparently not happening: the availability of and applying for financial aid.<br />&nbsp; &nbsp; &nbsp; &nbsp;Department-wide annual plans and performance reports describe the goals and intended outcomes of U.S. Department of Education programs and initiatives. Annual strategies and targets are published in performance plans in advance of each fiscal year; These strategies and targets are part of public scrutiny and even evaluated in court of law.<br />&nbsp; &nbsp; &nbsp; &nbsp;In recent news, the U.S Department of Education headed by Betsy DeVos was criticised for its handling of US Student loan crisis and specially in context of profiting of Student loans by For-Profit Organizations in US. The students graduated from these schools were unable to find a Job nor repay the Aid received by the student of these institutions.<br />&nbsp; &nbsp; &nbsp; &nbsp;By providing this oversight of all Student aid program participants&mdash;schools, financial entities&mdash;It ensures compliance with the laws, regulations, and policies governing federal student aid programs. This Model can help the Federal Agency to identify the Aid disbursed to such Schools/Universities by using appropriate filters and get the statistical inference of NPAs. Thus, avoiding the disbursement of Aids to certain Organizations that have been in Scrutiny for dubious reasons.</p>
+<h5><em>Problem Statement, Scope and Objective</em>Problem Statement:</h5>
+<ul>
+<li>To understand the pattern for student&rsquo;s aid requirement across US by the U.S Department of Education.</li>
+<li>The U.S D.O. E (US Department of Education) yet to come up with a customized investment plan with respect to State level/University School levels respectively.</li>
+<li>Identifying and grouping the Institution based on Loan criterions to improvise the Economic growth.</li>
+<li>Reduction of bad loans by avoid the disbursement of such bad loans to Institutions with Dubious reputations.</li>
+</ul>
+<h5>Objective: </h5>
+<ul>
+<li>To forecast students&rsquo; aid both in terms of number of grants and grant value. To provide a detailed descriptive analysis on the student loan trends based on various variables like location, school type, loan type</li>
+<li>Steps to achieve this objective:
+<ul>
+<li>Descriptive analysis to analyse the pattern &amp; trends.</li>
+<li>Predictive analysis and predictive modelling</li>
+</ul>
+</li>
+</ul>
+<h5>Scope: &nbsp;</h5>
+<ul>
+<li>The scope of the project is restricted to student loans from the data collected from Federal Student Aid (FSA) in USA for the period 2008 to 2019 Quarter 4.</li>
+</ul>
+</div>
+
+</body>
+</html>

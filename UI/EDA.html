@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dharmaraj D(rajaddr@gmail.com)">
+    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
+    <title>Forecasting Federal Students Aid (FSA) :: EDA</title>
+
+    <link rel="shortcut icon" href="/UI/Img/2.png" type="image/x-icon">
+    <link rel="icon" href="/UI/Img/2.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="/UI/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/UI/css/Chart.min.css">
+
+    <script src="/UI/Js/jquery.slim.min.js"></script>
+    <script src="/UI/Js/bootstrap.min.js"></script>
+    <script src="/UI/Js/angular.min.js"></script>
+
+
+    <script src="/UI/Js/Chart.min.js"></script>
+    <script src="/UI/Js/Chart.bundle.min.js"></script>
+    <script src="/UI/Js/utils.js"></script>
+    <script src="/UI/Js/jput.js"></script>
+    <script src="/UI/Js/myScript.js"></script>
+</head>
+
+<style>
+body {margin:0;background-color: #ffffff}
+.h_fixed {position: fixed;width: 100%;background-color: #ffffff;border-bottom: 1px solid #e2e3e5}
+.b_fixed {position: fixed;width: 100%; bottom: 0; background-color: #ffffff; font-size: 10px; height: 18px;padding-top: 0px; text-align: center;border-bottom: 1px solid #e2e3e5}
+.m_div {width: 100%; height: 100%; background-color: #ffffff;padding-top: 60px;padding-bottom: 15px}
+</style>
+
+</head>
+
+<body>
+
+<nav class="h_fixed navbar navbar-expand-lg navbar-light ">
+  <a class="navbar-brand" href="/"><img src="/UI/Img/2.png" width="30" height="27">  FSA</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="models">Models</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="eda">EDA</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<footer class="card-footer b_fixed">
+    Copyright © 2020. ® All rights reserved. Data Source : Federal Student Aid (FSA), an office of the U.S. Department of Education. Hosting : Amazon Web Services (AWS).
+</footer>
+
+<div class="m_div" id="Main_Div">
+   <div class='tableauPlaceholder' id='viz1578155765457' style='position: relative;'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ED&#47;EDAFEDAid&#47;EDA&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='EDAFEDAid&#47;EDA' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ED&#47;EDAFEDAid&#47;EDA&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1578155765457');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+</div>
+
+</body>
+</html>
