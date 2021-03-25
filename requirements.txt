@@ -4,7 +4,7 @@ numpy==1.17.4
 pandas==0.25.3
 statsmodels==0.10.2
 sklearn==0.0
-PyYAML==5.3
+PyYAML==5.4
 pmdarima==1.5.2
 flask-cors==3.0.8
 xlrd==1.2.0
